@@ -98,7 +98,7 @@ export default function IconBtn(props) {
           {emailIcon(1)}
         </a>
       </div>
-      <div className={styles.iconsbtn} style={{display: "none"}}>
+      <div className={styles.iconsbtn} style={{ display: "none" }}>
         <a
           target="_blank"
           href="https://wa.me/55321986332900"
@@ -110,7 +110,7 @@ export default function IconBtn(props) {
       <div className={styles.iconsbtn}>
         <a
           target="_blank"
-          href="https://www.youtube.com/@ifinfobr"
+          href="https://www.youtube.com/channel/UC2G6ZZilUH2UUCkox8KUuGw"
           className={styles.linksicons}
         >
           {youtubeIcon(2)}

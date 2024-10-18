@@ -7,9 +7,9 @@ export default function Header() {
     <HeaderStyled>
       <div className="divmenu">
         <div className="menu">
-          <a href={"/"} className="linkmenu">
+          {/* <a href={"/"} className="linkmenu">
             Home
-          </a>
+          </a> */}
         </div>
         <div className="divredessociais">
           <IconBtn tamCase={100} corBtn={1} />
