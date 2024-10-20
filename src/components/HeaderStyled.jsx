@@ -8,6 +8,8 @@ export const HeaderStyled = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  font-size: 15pt;
+  line-height: 20pt;
 
   .divmenu {
     display: flex;
@@ -59,6 +61,7 @@ export const HeaderStyled = styled.div`
     font-weight: bold;
     color: rgb(226, 226, 226);
     font-size: 9vw;
+    line-height: normal;
   }
 
   .divlogo p {

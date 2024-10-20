@@ -14,6 +14,7 @@ export default function Main() {
 
   return (
     <MainStyled>
+      
       <section className="quemsou">
         <div className="divquemsou">
           <div className="quemsouperg">Quem sou?</div>

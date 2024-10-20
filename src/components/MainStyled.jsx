@@ -5,12 +5,13 @@ export const MainStyled = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  font-size: 15pt;
+  line-height: 20pt;
+  
   .quemsou {
     display: flex;
     align-items: center;
     justify-content: center;
-
   }
 
   .divquemsou {
