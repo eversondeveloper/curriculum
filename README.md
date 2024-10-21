@@ -52,7 +52,7 @@ Não hesite em entrar em contato!
 Você pode entrar em contato diretamente pelos canais abaixo:
 
 - **E-mail**: [eversonsilvadeveloper@gmail.com](mailto:eversonsilvadeveloper@gmail.com)
-- **GitHub**: [EversonDeveloper](https://github.com/Everson33rj)
+- **GitHub**: [EversonDeveloper](https://github.com/eversondeveloper)
 - **LinkedIn**: [Everson Silva](https://www.linkedin.com/in/everson-silva-53308327/)
 - **YouTube**: [Meu Canal no YouTube](https://www.youtube.com/channel/UC2G6ZZilUH2UUCkox8KUuGw)
 
@@ -64,7 +64,7 @@ Aqui estão alguns canais onde você pode acompanhar meu trabalho:
 
 [![YouTube](https://img.shields.io/badge/-YouTube-red?logo=youtube&logoColor=white&style=flat-square)](https://www.youtube.com/channel/UC2G6ZZilUH2UUCkox8KUuGw)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/in/everson-silva-53308327/)
-[![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github&logoColor=white&style=flat-square)](https://github.com/Everson33rj)
+[![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github&logoColor=white&style=flat-square)](https://github.com/eversondeveloper)
 [![WhatsApp](https://img.shields.io/badge/-WhatsApp-brightgreen?logo=whatsapp&logoColor=white&style=flat-square)](https://wa.me/5521986332900)
 
 ---
