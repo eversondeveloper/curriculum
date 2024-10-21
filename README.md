@@ -1,21 +1,26 @@
 # Portfólio Profissional - Everson Silva
 
-Bem-vindo ao meu repositório de portfólio profissional! Aqui você pode encontrar informações sobre meu trabalho, projetos e como entrar em contato para serviços de **Engenharia de Software** ou **Design Gráfico**.
+Bem-vindo ao meu repositório de portfólio profissional! Aqui você encontra todas as informações sobre minha trajetória, habilidades e formas de entrar em contato comigo para serviços de **Engenharia de Software** ou **Design Gráfico**.
 
-## 🌐 Acesse meu Portfólio Online
+## 🌐 Acesse o Portfólio Online
 
-Confira o meu portfólio completo no link abaixo:
+Para visualizar meu portfólio completo, acesse o link abaixo:
 
-🔗 **[Portfólio - Everson Silva](https://eversondeveloper.github.io/curriculum/)**
+🔗 **[Portfólio Everson Silva](https://eversondeveloper.github.io/curriculum/)**
 
 ---
 
 ## 👨‍💻 Sobre Mim
 
-Eu sou **Everson Silva**, um desenvolvedor com foco em **Engenharia de Software** e **Design Gráfico**, atualmente cursando **Engenharia de Software** e adquirindo novas habilidades no desenvolvimento de aplicações.
+Eu sou **Everson Silva**, desenvolvedor e designer gráfico, atualmente focado em transição de carreira para **Engenharia de Software**. Tenho uma longa trajetória no **Design Gráfico** e, nos últimos anos, expandi minhas habilidades para o desenvolvimento de software.
 
-- **Design Gráfico**: Mais de 10 anos de experiência criando identidades visuais para empresas e freelancers.
-- **Desenvolvimento de Software**: Experiência com **JavaScript**, **React**, **Node.js** e outros frameworks para desenvolvimento web.
+### Experiência Profissional:
+
+- **Design Sênior (2011 - 2021)**: Responsável por toda a mídia digital e impressa de uma instituição de médio porte, desenvolvendo identidades visuais e conteúdos que impactaram o público.
+  
+- **Designer Freelance (2021 - Atual)**: Atuação freelance em diversas áreas do design gráfico, como criação de logotipos, design de materiais publicitários e gerenciamento de mídias sociais.
+
+- **Desenvolvimento Web (2022 - Atual)**: Desde 2021, tenho me aprofundado nos estudos de desenvolvimento de software e atualmente curso **Engenharia de Software**, com foco em desenvolvimento web e aplicações modernas.
 
 ---
 
@@ -31,20 +36,20 @@ Eu sou **Everson Silva**, um desenvolvedor com foco em **Engenharia de Software*
 
 ## 💼 Serviços
 
-Estou disponível para:
+Se você precisa de um **desenvolvedor** ou **designer** para o seu projeto, estou disponível para:
 
 - **Desenvolvimento de Websites**
 - **Design Gráfico**
 - **Manutenção de Sites**
 - **Consultoria em Design e Tecnologia**
 
-Se você precisa de um **desenvolvedor** ou **designer** para o seu projeto, entre em contato comigo!
+Não hesite em entrar em contato!
 
 ---
 
 ## 📞 Informações de Contato
 
-Você pode entrar em contato diretamente comigo pelos canais abaixo:
+Você pode entrar em contato diretamente pelos canais abaixo:
 
 - **E-mail**: [eversonsilvadeveloper@gmail.com](mailto:eversonsilvadeveloper@gmail.com)
 - **GitHub**: [EversonDeveloper](https://github.com/Everson33rj)
@@ -53,4 +58,16 @@ Você pode entrar em contato diretamente comigo pelos canais abaixo:
 
 ---
 
-Obrigado por visitar meu repositório! Se você está interessado em me contratar ou discutir um projeto, sinta-se à vontade para entrar em contato.
+## ⚡️ Redes Sociais
+
+Aqui estão alguns canais onde você pode acompanhar meu trabalho:
+
+[![YouTube](https://img.shields.io/badge/-YouTube-red?logo=youtube&logoColor=white&style=flat-square)](https://www.youtube.com/channel/UC2G6ZZilUH2UUCkox8KUuGw)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/in/everson-silva-53308327/)
+[![GitHub](https://img.shields.io/badge/-GitHub-black?logo=github&logoColor=white&style=flat-square)](https://github.com/Everson33rj)
+[![WhatsApp](https://img.shields.io/badge/-WhatsApp-brightgreen?logo=whatsapp&logoColor=white&style=flat-square)](https://wa.me/5521986332900)
+
+---
+
+Obrigado por visitar meu repositório! Se você está interessado em discutir um projeto ou me contratar, sinta-se à vontade para entrar em contato.
+
