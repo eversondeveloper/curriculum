@@ -10,7 +10,6 @@ export const HeaderStyled = styled.div`
   align-items: center;
   font-size: 15pt;
   line-height: 20pt;
-  position: relative;
 
   .divmenu {
     display: flex;
@@ -81,57 +80,94 @@ export const HeaderStyled = styled.div`
     height: 100%;
   }
 
-  /* Ícone Mobile */
-  .mobile-icon {
-    display: none;
-    color: #e2e2e2;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    z-index: 1000;
-  }
-
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.95);
-    transform: translateX(100%);
-    transition: transform 0.4s ease-in-out;
-    z-index: 999;
-  }
-
-  .mobile-menu.open {
-    display: flex;
-    transform: translateX(0);
-  }
-
-  .mobile-link {
-    color: #e2e2e2;
-    text-decoration: none;
-    font-size: 20pt;
-    margin-bottom: 20px;
-    transition: color 0.3s ease;
-  }
-
-  .mobile-link:hover {
-    color: #c1c1c1;
+  @media (max-width: 900px) {
+    .divredessociais {
+      width: 30%;
+    }
   }
 
   @media (max-width: 600px) {
+    .header {
+      background-color: #232323;
+      color: #e2e2e2;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .divmenu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 10vh;
+      width: 90%;
+    }
+
+    .menu {
+      display: flex;
+    }
+
+    .linkmenu {
+      font-size: 17pt;
+    }
+
+    .linkmenu:hover {
+      color: #c1c1c1;
+    }
+
+    .divredessociais {
+      width: 40%;
+    }
+
+    .logoimage {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .divlogo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .divlogo a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #e2e2e2;
+      font-size: 9vw;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .divlogo p {
+      width: 50%;
+      text-align: center;
+    }
+
+    .divimage {
+      width: 50%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 500px) {
     .divmenu {
       display: none;
     }
 
-    .mobile-icon {
-      display: block;
+    .divredessociais {
+      width: 60%;
     }
 
     .divlogo a {
