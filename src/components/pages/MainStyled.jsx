@@ -5,10 +5,9 @@ export const MainStyled = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 16px; /* Tamanho de texto padrão */
-  line-height: 1.6; /* Melhor legibilidade */
-  color: #333; /* Cor de texto mais moderna */
-
+  font-size: 15pt;
+  line-height: 20pt;
+  
   .quemsou {
     display: flex;
     align-items: center;
@@ -25,17 +24,12 @@ export const MainStyled = styled.div`
   }
 
   .quemsouperg {
-    font-size: 2.5rem; /* Tamanho maior para títulos */
+    font-size: 30pt;
     font-weight: bold;
-    color: #232323; /* Cor mais destacada */
-    margin-bottom: 1.5rem; /* Espaçamento abaixo do título */
   }
 
   .quemsoutexto {
     width: 75%;
-    font-size: 1rem; /* Tamanho do texto para parágrafos */
-    color: #555; /* Cor de texto para melhor contraste */
-    line-height: 1.8; /* Mais espaçamento entre linhas */
   }
 
   .cards {
@@ -51,40 +45,38 @@ export const MainStyled = styled.div`
     margin-bottom: 10vh;
     display: flex;
     justify-content: space-between;
-    gap: 2rem; /* Espaçamento entre os cards */
   }
 
   .card1 {
     width: 30%;
-    height: auto;
-    background-color: #f9f9f9; /* Cor de fundo moderna */
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
-    border-radius: 8px;
+    height: 90%;
   }
 
   .cardsect1 {
-    font-size: 1.5rem;
+    height: 20%;
+    display: flex;
+    align-items: center;
     font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
   }
 
   .cardsect2 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-top: solid #ddd 1px;
-    border-bottom: solid #ddd 1px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    color: #666;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    border-top: solid #000000 1px;
+    border-bottom: solid #000000 1px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
   }
 
   .cardsect3 {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
 
   .divprincipal {
@@ -111,9 +103,6 @@ export const MainStyled = styled.div`
 
   .divaside p {
     margin-top: 5vh;
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.8;
   }
 
   .divstatus {
@@ -122,71 +111,115 @@ export const MainStyled = styled.div`
     border-radius: 5px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
+    .quemsou {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .divquemsou {
-      width: 100%;
+      width: 80%;
+      display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .quemsouperg {
+      font-size: 30pt;
+      font-weight: bold;
+      width: 100%;
+      margin-bottom: 5vh;
+      text-align: center;
+    }
+
+    .quemsoutexto {
+      width: 100%;
+    }
+
+    .cards {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e2e2e2;
+    }
+
+    .divcards {
+      width: 80%;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .card1 {
+      width: 100%;
+      height: 90%;
+    }
+
+    .cardsect1 {
+      height: 20%;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      margin-top: 3vh;
+      margin-bottom: 3vh;
+    }
+
+    .cardsect2 {
+      height: 15%;
+      display: flex;
+      align-items: center;
+      border-top: solid #000000 1px;
+      border-bottom: solid #000000 1px;
+      padding-top: 3vh;
+      padding-bottom: 3vh;
+    }
+
+    .cardsect3 {
+      height: 65%;
+      display: flex;
       align-items: center;
       margin-top: 5vh;
       margin-bottom: 5vh;
     }
 
-    .quemsouperg {
-      font-size: 2rem;
-      text-align: center;
-    }
-
-    .quemsoutexto {
-      width: 100%;
-      font-size: 1rem;
-      text-align: center;
-    }
-
-    .divcards {
-      width: 100%;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-
-    .card1 {
-      width: 90%;
+    .divprincipal {
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .divprincipalint {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
       flex-direction: column;
-      width: 100%;
     }
 
-    .divhabilidades,
+    .divhabilidades {
+      width: 100%;
+      margin-bottom: 10vh;
+    }
+
     .divaside {
       width: 100%;
-      margin-bottom: 3rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .quemsouperg {
-      font-size: 1.8rem;
-    }
-
-    .quemsoutexto {
-      font-size: 0.9rem;
-    }
-
-    .cardsect1 {
-      font-size: 1.3rem;
-    }
-
-    .cardsect2 {
-      font-size: 1rem;
-    }
-
-    .cardsect3 {
-      font-size: 0.9rem;
     }
 
     .divaside p {
-      font-size: 0.9rem;
+      margin-top: 5vh;
+    }
+
+    .divstatus {
+      width: 100%;
+      margin-top: 3vh;
+      border-radius: 5px;
     }
   }
-`;
+`
