@@ -2,16 +2,17 @@ import { Routes, Route } from "react-router-dom";
 import { AppStyled } from "./AppStyled";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Main from "./components/pages/Main";
+import Contato from "./components/pages/Contato";
 
 function App() {
   return (
     <AppStyled>
+      <Header />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/contato" element={<Contato />} />
       </Routes>
-      <Header />
-      <Main />
       <Footer />
     </AppStyled>
   );

@@ -1,5 +1,5 @@
 // import IconBtn from "./IconsBtn";
-import BarraStatus from "./BarraStatus";
+import BarraStatus from "../BarraStatus";
 import { MainStyled } from "./MainStyled";
 
 export default function Main() {
