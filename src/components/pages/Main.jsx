@@ -1,4 +1,3 @@
-// import IconBtn from "./IconsBtn";
 import BarraStatus from "../BarraStatus";
 import { MainStyled } from "./MainStyled";
 
@@ -14,7 +13,6 @@ export default function Main() {
 
   return (
     <MainStyled>
-      
       <section className="quemsou">
         <div className="divquemsou">
           <div className="quemsouperg">Quem sou?</div>
@@ -49,7 +47,7 @@ export default function Main() {
               Durante esse período, fiquei encarregado de toda a mídia, seja
               digital ou impressa, de uma instituição de médio porte. Minhas
               responsabilidades incluíam a criação e gerenciamento de conteúdos
-              visuais que visavem atrair usuários e a organização visual da
+              visuais que visavam atrair usuários e a organização visual da
               instituição.
             </div>
           </div>
@@ -58,8 +56,8 @@ export default function Main() {
             <h1 className="cardsect1">Design Frelance</h1>
             <div className="cardsect2">2021 - Atual</div>
             <div className="cardsect3">
-              Com ampla experiência em diversas áreas do design gráfico.
-              Semprerealizando trabalhos freelancers, como criação de logotipos,
+              Com ampla experiência em diversas áreas do design gráfico. Sempre
+              realizando trabalhos freelancers, como criação de logotipos,
               edição de vídeos, adesivos de parede, banners, panfletos, cartões
               de visita, jornais, revistas artes para camisas, para sites e
               redes sociais, entre outros.
@@ -135,7 +133,6 @@ export default function Main() {
                 baseCalc={100}
               />
             </div>
-
             <div className="divstatus">
               <BarraStatus
                 tamTexto={15}
@@ -145,7 +142,7 @@ export default function Main() {
                 texto={"Eng. de Soft. (Cursando)"}
                 corTexto={corTexto}
                 corBarra={corBarra1}
-                tamBarra={4}
+                tamBarra={5}
                 baseCalc={8}
               />
             </div>
@@ -171,7 +168,7 @@ export default function Main() {
                 texto={"TypeScript"}
                 corTexto={corTexto}
                 corBarra={corBarra1}
-                tamBarra={50}
+                tamBarra={30}
                 baseCalc={100}
               />
             </div>
@@ -194,7 +191,7 @@ export default function Main() {
                 tamQuadro={100}
                 largQuadro={10}
                 corBack={corBackGeral}
-                texto={"C (Cursando)"}
+                texto={"C"}
                 corTexto={corTexto}
                 corBarra={corBarra1}
                 tamBarra={30}
@@ -223,7 +220,7 @@ export default function Main() {
                 texto={"Python"}
                 corTexto={corTexto}
                 corBarra={corBarra1}
-                tamBarra={50}
+                tamBarra={30}
                 baseCalc={100}
               />
             </div>
@@ -249,7 +246,7 @@ export default function Main() {
                 texto={"React Native"}
                 corTexto={corTexto}
                 corBarra={corBarra1}
-                tamBarra={76}
+                tamBarra={70}
                 baseCalc={100}
               />
             </div>
@@ -262,7 +259,7 @@ export default function Main() {
                 texto={"HTML"}
                 corTexto={corTexto}
                 corBarra={corBarra1}
-                tamBarra={95}
+                tamBarra={90}
                 baseCalc={100}
               />
             </div>
@@ -275,7 +272,7 @@ export default function Main() {
                 texto={"CSS"}
                 corTexto={corTexto}
                 corBarra={corBarra1}
-                tamBarra={90}
+                tamBarra={80}
                 baseCalc={100}
               />
             </div>
@@ -288,7 +285,7 @@ export default function Main() {
                 texto={"Montagem e Manut. Computadores"}
                 corTexto={corTexto}
                 corBarra={corBarra3}
-                tamBarra={99}
+                tamBarra={90}
                 baseCalc={100}
               />
             </div>
