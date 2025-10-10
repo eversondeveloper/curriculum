@@ -7,7 +7,7 @@ export const MainStyled = styled.div`
   flex-direction: column;
   font-size: 15pt;
   line-height: 20pt;
-  
+
   .quemsou {
     display: flex;
     align-items: center;
@@ -37,6 +37,8 @@ export const MainStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #e2e2e2;
+    box-shadow: inset 10px 10px 10px #0000002d;
   }
 
   .divcards {
@@ -90,15 +92,17 @@ export const MainStyled = styled.div`
   .divprincipalint {
     width: 90%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
 
   .divhabilidades {
-    width: 48%;
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   .divaside {
-    width: 48%;
+    width: 100%;
   }
 
   .divaside p {
@@ -111,7 +115,7 @@ export const MainStyled = styled.div`
     border-radius: 5px;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .quemsou {
       display: flex;
       align-items: center;
@@ -222,4 +226,4 @@ export const MainStyled = styled.div`
       border-radius: 5px;
     }
   }
-`
+`;
