@@ -13,7 +13,7 @@ export const HeaderStyled = styled.div`
 
   .divmenu {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     height: 50px;
     width: 90%;

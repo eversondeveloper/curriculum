@@ -18,22 +18,49 @@ export default function Main() {
           <div className="quemsouperg">Quem sou?</div>
           <div className="quemsoutexto">
             <p>
-              Nasci no interior do Rio de Janeiro, em uma cidade chamada
-              Resende. Me mudei para a cidade do Rio aos sete anos de idade. Aos
-              dez, tive meu primeiro contato com um computador, e foi amor à
-              primeira vista. Desde então, já se passaram trinta e cinco anos,
-              em frente a essa máquina magnífica.
+              Sou natural do interior do Rio de Janeiro, da cidade de Resende.
+              Cresci em um ambiente tranquilo, repleto de curiosidade e
+              criatividade. Aos seis anos, mudei-me para a capital, onde comecei
+              a ter contato com novas oportunidades e tecnologias que, até
+              então, pareciam distantes. Aos dez anos, tive meu primeiro
+              encontro com um computador e foi literalmente amor à primeira
+              vista. Lembro-me do fascínio ao descobrir que aquela máquina era
+              capaz de transformar ideias em realidade. Desde então, já se
+              passaram mais de trinta e cinco anos de aprendizado contínuo,
+              experimentação e uma paixão que só se intensificou com o tempo.
             </p>
             <br />
             <p>
-              Após muitos anos dedicados ao design gráfico, meu objetivo atual é
-              fazer uma transição de carreira para a engenharia de software e o
-              desenvolvimento de aplicações. Estou focado em adquirir as
-              habilidades necessárias para construir um futuro promissor nessa
-              área, buscando constantemente novos conhecimentos e experiências.
-              Pretendo aplicar minha criatividade e conhecimentos técnicos para
-              criar soluções inovadoras e impactar positivamente o setor de
-              tecnologia.
+              Durante muitos anos, dediquei-me profissionalmente ao design
+              gráfico, onde aprimorei meu olhar para detalhes, estética e
+              usabilidade. Essa experiência me ensinou a importância da harmonia
+              entre forma e função, e me deu uma base sólida para compreender o
+              valor da experiência do usuário. No entanto, minha curiosidade
+              natural e desejo de construir soluções mais complexas e
+              inteligentes me levaram a seguir um novo caminho: a Engenharia de
+              Software.
+            </p>
+            <br />
+            <p>
+              Atualmente, estou cursando Engenharia de Software e direcionando
+              todos os meus esforços para o desenvolvimento de sistemas e
+              aplicações modernas. Busco constantemente aprimorar meus
+              conhecimentos em programação, arquitetura de software e boas
+              práticas de desenvolvimento, sempre com foco em criar soluções
+              eficientes, seguras e visualmente atraentes. Acredito que a
+              combinação entre criatividade e lógica é o que diferencia um bom
+              desenvolvedor — e é exatamente essa fusão que me motiva todos os
+              dias.
+            </p>
+            <br />
+            <p>
+              Meu objetivo é consolidar minha carreira como Engenheiro de
+              Software, aplicando toda a experiência adquirida ao longo dos anos
+              para impactar positivamente empresas, instituições e comunidades
+              por meio da tecnologia. Tenho como propósito contribuir para um
+              mundo mais conectado, acessível e inovador, utilizando o poder do
+              software para transformar ideias em realidades concretas e gerar
+              valor para as pessoas.
             </p>
           </div>
         </div>
@@ -42,6 +69,21 @@ export default function Main() {
         <div className="divcards">
           <div className="card1">
             <h1 className="cardsect1">Design Sênior</h1>
+            <div className="cardsect2">2008 - 2023</div>
+            <div className="cardsect3">
+              Possuo ampla experiência em diversas áreas do design gráfico,
+              atuando consistentemente com trabalhos freelancers. Minhas
+              atividades abrangem a criação de logotipos, edição de vídeos,
+              desenhos e maquetes em três dimensões e o desenvolvimento de uma
+              vasta gama de materiais físicos, como adesivos de parede, banners,
+              panfletos, cartões de visita, jornais, revistas, artes para
+              camisas, uniformes de times e conteúdos gráficos para sites e
+              redes sociais, entre outros projetos de comunicação visual.
+            </div>
+          </div>
+
+          <div className="card1">
+            <h1 className="cardsect1">Design Frelance</h1>
             <div className="cardsect2">2011 - 2021</div>
             <div className="cardsect3">
               Durante esse período, fiquei encarregado de toda a mídia, seja
@@ -52,21 +94,6 @@ export default function Main() {
               supervisionei o desenvolvimento de campanhas de comunicação. Essa
               experiência consolidou minhas habilidades em direção de arte e
               estratégia de conteúdo para resultados específicos.
-            </div>
-          </div>
-
-          <div className="card1">
-            <h1 className="cardsect1">Design Frelance</h1>
-            <div className="cardsect2">2021 - Atual</div>
-            <div className="cardsect3">
-              Como um profissional multifacetado, a partir de 2021 passei a me
-              dedicar intensamente aos estudos de programação, culminando no
-              início do curso de Engenharia de Software em 2023. Nesse ínterim,
-              realizei trabalhos freelancers de manutenção de sites para
-              pequenas empresas. Paralelamente, comecei a ministrar aulas de
-              informática e design gráfico, onde utilizei meus conhecimentos em
-              programação para criar jogos educativos que auxiliavam o
-              desenvolvimento cognitivo dos meus alunos.
             </div>
           </div>
 
@@ -375,10 +402,10 @@ export default function Main() {
               Protetora Tânia. Minha contribuição abrangeu diversas frentes,
               incluindo o suporte financeiro contínuo e o voluntariado
               presencial em eventos e cuidados com os animais. Mais
-              crucialmente, atuei como Consultor de Programação Visual e
-              Design, desenvolvendo materiais gráficos essenciais para
-              campanhas de arrecadação de fundos e para a organização visual da
-              ONG, auxiliando na divulgação e na captação de recursos para o
+              crucialmente, atuei como Consultor de Programação Visual e Design,
+              desenvolvendo materiais gráficos essenciais para campanhas de
+              arrecadação de fundos e para a organização visual da ONG,
+              auxiliando na divulgação e na captação de recursos para o
               tratamento e abrigo dos animais resgatados.
             </p>
             <p>
@@ -393,11 +420,10 @@ export default function Main() {
               tratamentos iniciais e tirá-lo da situação de risco. Desde então,
               ele está em um hotelzinho para pets, onde recebe todo o conforto e
               acompanhamento veterinário necessários. Mensalmente, sou o
-              principal responsável pelos custos integrais da ração e
-              auxilio na organização das doações para a manutenção do hotel.
-              Minha meta é trazê-lo para viver comigo assim que for possível,
-              garantindo que ele tenha um lar permanente e amoroso como o Pingo
-              teve.
+              principal responsável pelos custos integrais da ração e auxilio na
+              organização das doações para a manutenção do hotel. Minha meta é
+              trazê-lo para viver comigo assim que for possível, garantindo que
+              ele tenha um lar permanente e amoroso como o Pingo teve.
             </p>
           </div>
         </div>

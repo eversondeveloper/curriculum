@@ -34,11 +34,11 @@ export default function Contato() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Envio de e-mail via EmailJS
+    
     emailjs
       .send(
-        "service_hj7e2ir", // Seu Service ID
-        "YOUR_TEMPLATE_ID", // Substitua pelo seu Template ID
+        "service_hj7e2ir", 
+        "YOUR_TEMPLATE_ID", 
         {
           nome: formData.nome,
           email: formData.email,
@@ -48,7 +48,7 @@ export default function Contato() {
           preferenciaContato:
             formData.preferenciaContato.join(", ") || "Não informado",
         },
-        "YOUR_PUBLIC_KEY" // Substitua pelo seu Public Key
+        "YOUR_PUBLIC_KEY" 
       )
       .then(
         (result) => {
@@ -60,7 +60,7 @@ export default function Contato() {
             assunto: "",
             mensagem: "",
             preferenciaContato: [],
-          }); // Limpa o formulário após o envio
+          }); 
         },
         (error) => {
           alert("Erro ao enviar o formulário. Tente novamente.");

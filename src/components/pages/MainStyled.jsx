@@ -1,23 +1,23 @@
 import styled from "styled-components";
 
-// Definição da Paleta de Cores
-const primaryColor = "#232323"; // Preto/cinza escuro para texto e fundo do header/footer
-const secondaryColor = "#FFFFFF"; // Branco puro para a maioria dos fundos
-const accentColor = "#007BFF"; // Azul moderno para destaques
-const lightGrey = "#F0F0F0"; // Cinza claro para seções de fundo
+
+const corPrimaria = "#232323"; 
+const corSecundaria = "#FFFFFF"; 
+const corRealce = "#707070"; 
+const cinzaClaro = "#F0F0F0"; 
 
 export const MainStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Arial', sans-serif; /* Use a fonte real do seu projeto */
-  font-size: 16px; /* Ajuste para pixels para melhor controle */
-  line-height: 1.6; /* Melhor legibilidade */
-  color: ${primaryColor};
-  background-color: ${secondaryColor};
+  font-family: 'Arial', sans-serif; 
+  font-size: 16px; 
+  line-height: 1.6; 
+  color: ${corPrimaria};
+  background-color: ${corSecundaria};
 
-  /* SEÇÃO QUEM SOU? */
+  
   .quemsou {
     width: 100%;
     display: flex;
@@ -27,7 +27,7 @@ export const MainStyled = styled.div`
   }
 
   .divquemsou {
-    width: 80%; /* Reduzido o max-width para melhor leitura */
+    width: 80%; 
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -35,9 +35,9 @@ export const MainStyled = styled.div`
   }
 
   .quemsouperg {
-    font-size: 2.5rem; /* Ajuste para rems */
+    font-size: 2.5rem; 
     font-weight: 700;
-    color: ${accentColor};
+    color: ${corRealce};
     width: 25%;
     min-width: 150px;
     margin-right: 5%;
@@ -52,14 +52,14 @@ export const MainStyled = styled.div`
     }
   }
 
-  /* SEÇÃO CARDS (EXPERIÊNCIA) */
+  
   .cards {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${lightGrey}; /* Fundo cinza claro para contraste */
-    box-shadow: none; /* Removendo o box-shadow interno, use um estilo mais sutil */
+    background-color: ${cinzaClaro}; 
+    box-shadow: none; 
     padding: 10vh 0;
   }
 
@@ -68,15 +68,15 @@ export const MainStyled = styled.div`
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    gap: 30px; /* Espaço entre os cards */
+    gap: 30px; 
   }
 
   .card1 {
-    width: 33.33%; /* Usando percentual para 3 colunas */
-    background-color: ${secondaryColor};
+    width: 33.33%; 
+    background-color: ${corSecundaria};
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -89,26 +89,26 @@ export const MainStyled = styled.div`
   .cardsect1 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: ${primaryColor};
+    color: ${corPrimaria};
     margin: 0 0 10px 0;
   }
 
   .cardsect2 {
     font-size: 1rem;
-    color: ${accentColor};
-    border-top: 1px solid ${lightGrey};
-    border-bottom: 1px solid ${lightGrey};
+    color: ${corRealce};
+    border-top: 1px solid ${cinzaClaro};
+    border-bottom: 1px solid ${cinzaClaro};
     padding: 15px 0;
     margin-bottom: 20px;
   }
 
   .cardsect3 {
     font-size: 1rem;
-    flex-grow: 1; /* Garante que o texto preencha o espaço */
-    display: block; /* Remove o display: flex desnecessário aqui */
+    flex-grow: 1; 
+    display: block; 
   }
 
-  /* SEÇÃO PRINCIPAL (HABILIDADES E VOLUNTÁRIO) */
+  
   .divprincipal {
     width: 100%;
     padding: 10vh 0;
@@ -121,7 +121,7 @@ export const MainStyled = styled.div`
     width: 80%;
     max-width: 1200px;
     display: flex;
-    flex-direction: row; /* Alterado para duas colunas no desktop */
+    flex-direction: row; 
     justify-content: space-between;
     gap: 50px;
   }
@@ -129,7 +129,7 @@ export const MainStyled = styled.div`
   .h1 {
       font-size: 2rem;
       font-weight: 700;
-      color: ${primaryColor};
+      color: ${corPrimaria};
       margin-bottom: 30px;
   }
 
@@ -140,11 +140,11 @@ export const MainStyled = styled.div`
 
   .divaside {
     width: 50%;
-    padding-left: 30px; /* Espaço para separar visualmente */
-    border-left: 1px solid ${lightGrey}; /* Linha de separação */
+    padding-left: 30px; 
+    border-left: 1px solid ${cinzaClaro}; 
     
     strong {
-        color: ${primaryColor};
+        color: ${corPrimaria};
         font-size: 1.1rem;
         display: block;
         margin-top: 25px;
@@ -152,21 +152,21 @@ export const MainStyled = styled.div`
     }
     
     p {
-        margin-top: 15px; /* Ajuste para não ter tanto espaço entre parágrafos de voluntariado */
+        margin-top: 15px; 
         font-size: 1rem;
     }
   }
 
   .divstatus {
     width: 100%;
-    margin-top: 15px; /* Reduzido a margem para um visual mais compacto */
+    margin-top: 15px; 
     border-radius: 5px;
   }
 
-  /* MEDIA QUERIES (Responsividade) */
+  
   @media (max-width: 992px) {
     .divprincipalint {
-        flex-direction: column; /* Habilidades e Voluntário em coluna */
+        flex-direction: column; 
     }
     
     .divhabilidades, .divaside {
