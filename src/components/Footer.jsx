@@ -20,13 +20,13 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="nav-section">
+        {/* <div className="nav-section">
           <h4>Navegação</h4>
           <ul>
             <li><Link to="/">Currículo</Link></li>
             <li><Link to="/contato">Contato</Link></li>
           </ul>
-        </div>
+        </div> */}
 
         <div className="nav-section">
           <h4>Social</h4>
