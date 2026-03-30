@@ -1,111 +1,90 @@
 import styled from "styled-components";
 
-export const ContatoStyled = styled.div`
+export const ContactContainer = styled.section`
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 20px;
-  background-color: #f9f9f9;
-  min-height: 100vh;
+`;
 
-  .container {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-  }
+export const ContactCard = styled.div`
+  background: #fff;
+  width: 100%;
+  padding: 50px;
+  border-radius: 15px;
+  border: 1px solid ${props => props.theme.colors.border};
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
 
   h1 {
-    text-align: center;
-    color: #232323;
+    font-size: 2.2rem;
     margin-bottom: 10px;
-    font-size: 2rem;
+    color: ${props => props.theme.colors.primary};
   }
 
   p {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #555;
-    font-size: 1rem;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  label {
-    margin-bottom: 8px;
-    font-size: 1rem;
-    color: #333;
-  }
-
-  input,
-  textarea {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    transition: border 0.3s ease;
-  }
-
-  input:focus,
-  textarea:focus {
-    border: 1px solid #232323;
-    outline: none;
-  }
-
-  textarea {
-    resize: vertical;
-  }
-
-  .checkbox-group {
-    margin-bottom: 20px;
-  }
-
-  .checkboxes {
-    display: flex;
-    gap: 10px;
-  }
-
-  .checkboxes label {
-    display: flex;
-    align-items: center;
-  }
-
-  button {
-    padding: 12px;
-    font-size: 1rem;
-    background-color: #232323;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #444;
+    color: ${props => props.theme.colors.accent};
+    margin-bottom: 40px;
   }
 
   @media (max-width: 768px) {
-    .container {
-      padding: 20px;
-    }
+    padding: 30px 20px;
+  }
+`;
 
-    h1 {
-      font-size: 1.8rem;
-    }
+export const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-    p {
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    label {
       font-size: 0.9rem;
+      font-weight: 600;
+      color: ${props => props.theme.colors.primary};
     }
 
-    button {
-      font-size: 0.9rem;
+    input, textarea {
+      padding: 12px 15px;
+      border-radius: 8px;
+      border: 2px solid ${props => props.theme.colors.border};
+      font-family: inherit;
+      font-size: 1rem;
+      transition: ${props => props.theme.transition};
+
+      &:focus {
+        outline: none;
+        border-color: ${props => props.theme.colors.info};
+        background-color: rgba(0, 123, 255, 0.01);
+      }
+    }
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: ${props => props.theme.colors.primary};
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: ${props => props.theme.transition};
+
+    &:hover {
+      background-color: ${props => props.theme.colors.info};
+      transform: translateY(-2px);
+    }
+
+    &:disabled {
+      background-color: ${props => props.theme.colors.accent};
+      cursor: not-allowed;
     }
   }
 `;

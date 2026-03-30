@@ -1,53 +1,46 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-const primaryColor = "#232323";
-const middleColor = "#007BFF";
-const highColor = "#28A745";
+const fillAnimation = keyframes`
+  from { width: 0; }
+  to { width: ${props => props.percent}%; }
+`;
 
-export const BarraStatusStyled = styled.div``;
+export const SkillWrapper = styled.div`
+  margin-bottom: 20px;
+  width: 100%;
+`;
 
-export const ProgressBarContainer = styled.div`
-  width: ${(props) => props.width || "100%"};
-  height: ${(props) => props.height || "20px"};
-  background-color: ${(props) => props.corBack || "#e2e2e2"};
+export const SkillInfo = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  
+  label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: ${props => props.theme.colors.primary};
+  }
+
+  span {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: ${props => props.color || props.theme.colors.accent};
+  }
+`;
+
+export const ProgressContainer = styled.div`
+  width: 100%;
+  height: 8px;
+  background-color: ${props => props.theme.colors.secondary};
   border-radius: 10px;
   overflow: hidden;
-  position: relative;
-  margin-top: 5px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 `;
 
-export const ProgressBarFill = styled.div`
-  width: ${(props) => props.calcWidth || "0%"};
+export const ProgressFill = styled.div`
   height: 100%;
-  background-color: ${(props) => props.color};
+  width: ${props => props.percent}%;
+  background-color: ${props => props.color};
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  transition: width 0.7s ease-out, background-color 0.3s ease-in;
-  position: relative;
+  animation: ${fillAnimation} 1.5s ease-out forwards;
 `;
-
-export const SkillLabel = styled.div`
-  font-weight: 600;
-  font-size: 1rem;
-  color: ${primaryColor};
-  margin-bottom: 5px;
-`;
-
-export const PercentageText = styled.span`
-  font-weight: bold;
-  font-size: 0.7rem;
-  color: #bcbcbc;
-  padding-right: 10px;
-  white-space: nowrap;
-`;
-
-export const Colors = {
-  defaultColor: primaryColor,
-  middleColor: middleColor,
-  highColor: highColor,
-  lightText: "#fff",
-  darkText: primaryColor,
-};

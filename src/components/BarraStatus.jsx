@@ -1,59 +1,40 @@
-import { useEffect, useState } from "react";
-
-/* eslint-disable react/prop-types */
-import {
-  ProgressBarContainer,
-  ProgressBarFill,
-  SkillLabel,
-  PercentageText,
-  Colors,
+import React from "react";
+import { useTheme } from "styled-components";
+import { 
+  SkillWrapper, 
+  SkillInfo, 
+  ProgressContainer, 
+  ProgressFill 
 } from "./BarraStatusStyled";
 
-export default function BarraStatus(props) {
-  const tamBarraCalc = Number((100 / props.baseCalc) * props.tamBarra).toFixed(
-    0
-  );
+/**
+ * Componente de Skill Progress Profissional
+ * @param {string} label - Nome da tecnologia/habilidade
+ * @param {number} level - Nível de 0 a 100
+ */
+export default function BarraStatus({ label, level }) {
+  const theme = useTheme();
 
-  const [corBarra, setCorBarra] = useState("#000");
+  // Lógica de cores centralizada: Engenharia de Design
+  const getColor = (value) => {
+    if (value >= 90) return theme.colors.success;
+    if (value >= 70) return theme.colors.info;
+    if (value >= 40) return theme.colors.accent;
+    return "#bdc3c7"; // Cor neutra para iniciante
+  };
 
-  const { defaultColor, middleColor, highColor, darkText } = Colors;
-
-  useEffect(() => {
-    let newColor = defaultColor;
-    if (tamBarraCalc >= 90) {
-      newColor = highColor;
-    } else if (tamBarraCalc >= 80) {
-      newColor = middleColor;
-    }
-    setCorBarra(newColor);
-  }, [tamBarraCalc, defaultColor, middleColor, highColor]);
+  const barColor = getColor(level);
 
   return (
-    <>
-      <SkillLabel>{props.texto}</SkillLabel>
-      <ProgressBarContainer
-        width={`${props.tamQuadro}%`}
-        height={`${props.largQuadro}px`}
-        corBack={props.corBack}
-      >
-        <ProgressBarFill calcWidth={`${tamBarraCalc}%`} color={corBarra}>
-          {tamBarraCalc >= 20 && (
-            <PercentageText>{tamBarraCalc}%</PercentageText>
-          )}
-        </ProgressBarFill>
-        {tamBarraCalc < 20 && (
-          <PercentageText
-            style={{
-              color: darkText,
-              position: "absolute",
-              right: 0,
-              paddingRight: "10px",
-            }}
-          >
-            {tamBarraCalc}%
-          </PercentageText>
-        )}
-      </ProgressBarContainer>
-    </>
+    <SkillWrapper>
+      <SkillInfo color={barColor}>
+        <label>{label}</label>
+        <span>{level}%</span>
+      </SkillInfo>
+      
+      <ProgressContainer>
+        <ProgressFill percent={level} color={barColor} />
+      </ProgressContainer>
+    </SkillWrapper>
   );
 }

@@ -1,19 +1,22 @@
 import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
-import { ContatoStyled } from "./ContatoStyled";
+import { ContactContainer, ContactCard, StyledForm } from "./ContatoStyled";
 
+/**
+ * Página de Contato Profissional
+ * Implementa validação básica e integração com EmailJS.
+ */
 export default function Contato() {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     nome: "",
     email: "",
-    telefone: "",
     assunto: "",
     mensagem: "",
-    preferenciaContato: [],
   });
 
   useEffect(() => {
-    window.document.title = "Contato";
+    window.document.title = "Contato | Everson Silva";
   }, []);
 
   const handleInputChange = (e) => {
@@ -21,146 +24,94 @@ export default function Contato() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleCheckboxChange = (e) => {
-    const { value, checked } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      preferenciaContato: checked
-        ? [...prevData.preferenciaContato, value]
-        : prevData.preferenciaContato.filter((item) => item !== value),
-    }));
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
 
-    
-    emailjs
-      .send(
-        "service_hj7e2ir", 
-        "YOUR_TEMPLATE_ID", 
-        {
-          nome: formData.nome,
-          email: formData.email,
-          telefone: formData.telefone || "Não informado",
-          assunto: formData.assunto,
-          mensagem: formData.mensagem,
-          preferenciaContato:
-            formData.preferenciaContato.join(", ") || "Não informado",
-        },
-        "YOUR_PUBLIC_KEY" 
-      )
-      .then(
-        (result) => {
-          alert("Formulário enviado com sucesso!");
-          setFormData({
-            nome: "",
-            email: "",
-            telefone: "",
-            assunto: "",
-            mensagem: "",
-            preferenciaContato: [],
-          }); 
-        },
-        (error) => {
-          alert("Erro ao enviar o formulário. Tente novamente.");
-        }
-      );
+    // DICA: Substitua pelas suas chaves reais do EmailJS
+    emailjs.send(
+      "service_hj7e2ir", 
+      "YOUR_TEMPLATE_ID", 
+      formData,
+      "YOUR_PUBLIC_KEY"
+    )
+    .then(() => {
+      alert("Mensagem enviada com sucesso! Em breve entrarei em contato.");
+      setFormData({ nome: "", email: "", assunto: "", mensagem: "" });
+    })
+    .catch((err) => {
+      alert("Ocorreu um erro ao enviar. Por favor, tente novamente ou use o LinkedIn.");
+      console.error("EmailJS Error:", err);
+    })
+    .finally(() => {
+      setLoading(false);
+    });
   };
 
   return (
-    <ContatoStyled>
-      <div className="container">
-        <h1>Entre em Contato</h1>
-        <p>
-          Para serviços profissionais ou dúvidas, preencha o formulário abaixo.
-        </p>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="nome">Nome Completo *</label>
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            value={formData.nome}
-            onChange={handleInputChange}
-            required
-          />
-
-          <label htmlFor="email">E-mail *</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            required
-          />
-
-          <label htmlFor="telefone">Telefone (opcional)</label>
-          <input
-            type="tel"
-            id="telefone"
-            name="telefone"
-            value={formData.telefone}
-            onChange={handleInputChange}
-          />
-
-          <label htmlFor="assunto">Assunto *</label>
-          <input
-            type="text"
-            id="assunto"
-            name="assunto"
-            value={formData.assunto}
-            onChange={handleInputChange}
-            required
-          />
-
-          <label htmlFor="mensagem">Mensagem *</label>
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            rows="5"
-            value={formData.mensagem}
-            onChange={handleInputChange}
-            required
-          />
-
-          <div className="checkbox-group">
-            <label>Meios de contato preferidos (opcional)</label>
-            <div className="checkboxes">
-              <label>
-                <input
-                  type="checkbox"
-                  value="E-mail"
-                  checked={formData.preferenciaContato.includes("E-mail")}
-                  onChange={handleCheckboxChange}
-                />
-                E-mail
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  value="Telefone"
-                  checked={formData.preferenciaContato.includes("Telefone")}
-                  onChange={handleCheckboxChange}
-                />
-                Telefone
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  value="WhatsApp"
-                  checked={formData.preferenciaContato.includes("WhatsApp")}
-                  onChange={handleCheckboxChange}
-                />
-                WhatsApp
-              </label>
-            </div>
+    <ContactContainer>
+      <ContactCard>
+        <h1>Vamos conversar?</h1>
+        <p>Tem um projeto em mente ou deseja discutir uma oportunidade? Preencha o formulário abaixo.</p>
+        
+        <StyledForm onSubmit={handleSubmit}>
+          <div className="input-group">
+            <label htmlFor="nome">Seu Nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Ex: João Silva"
+              value={formData.nome}
+              onChange={handleInputChange}
+              required
+            />
           </div>
 
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </ContatoStyled>
+          <div className="input-group">
+            <label htmlFor="email">Seu E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@exemplo.com"
+              value={formData.email}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+
+          <div className="input-group">
+            <label htmlFor="assunto">Assunto</label>
+            <input
+              type="text"
+              id="assunto"
+              name="assunto"
+              placeholder="Ex: Proposta de Projeto"
+              value={formData.assunto}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+
+          <div className="input-group">
+            <label htmlFor="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              placeholder="Descreva brevemente sua necessidade..."
+              value={formData.mensagem}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+
+          <button type="submit" disabled={loading}>
+            {loading ? "Enviando..." : "Enviar Mensagem"}
+          </button>
+        </StyledForm>
+      </ContactCard>
+    </ContactContainer>
   );
 }

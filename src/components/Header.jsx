@@ -1,35 +1,39 @@
+import { Link } from "react-router-dom";
 import ImageAutor from "../../public/autor.png";
 import IconBtn from "./IconsBtn";
-import { HeaderStyled } from "./HeaderStyled";
+import { HeaderContainer, TopBar, HeroContent } from "./HeaderStyled";
 
+/**
+ * Header Profissional
+ * Focado em autoridade e clareza de propósito.
+ */
 export default function Header() {
   return (
-    <HeaderStyled>
-      <div className="divmenu">
-        {/* <div className="menu">
-          <a href={"/"} className="linkmenu">
-            Home
-          </a>
-        </div> */}
-        <div className="divredessociais">
-          <IconBtn tamCase={100} corBtn={1} />
+    <HeaderContainer>
+      <TopBar>
+        <div className="nav-links">
+          {/* <Link to="/">Currículo</Link>
+          <Link to="/contato">Contato</Link> */}
         </div>
-      </div>
-      <div className="logoimage">
-        <div className="divlogo">
-          <a href={"/"}>
-            Everson
-            <br />
-            Silva
-          </a>
+        
+        {/* Passando o tema via props para o seu componente de ícones */}
+        <IconBtn tamCase={30} corBtn={1} />
+      </TopBar>
+
+      <HeroContent>
+        <div className="text-content">
+          <h1>
+            Everson <span>Silva</span>
+          </h1>
           <p>
-            A Engenharia de Software é onde a lógica encontra a criatividade.
+            "A Engenharia de Software é onde a lógica encontra a criatividade."
           </p>
         </div>
-        <div className="divimage">
-          <img src={ImageAutor} alt="Foto do Autor" className="fotoimagem" />
+
+        <div className="image-container">
+          <img src={ImageAutor} alt="Everson Silva - Engenheiro de Software" />
         </div>
-      </div>
-    </HeaderStyled>
+      </HeroContent>
+    </HeaderContainer>
   );
 }

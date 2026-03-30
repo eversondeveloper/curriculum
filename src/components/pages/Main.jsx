@@ -1,433 +1,73 @@
 import BarraStatus from "../BarraStatus";
-import { MainStyled } from "./MainStyled";
+import { 
+  MainContainer, SectionTitle, AboutSection, 
+  GridCards, ExperienceCard, SkillsLayout 
+} from "./MainStyled";
 
 export default function Main() {
-  const corBackGeral = "#e2e2e2";
-  const corBarra1 = "#232323";
-  const corBarra2 = "#232323";
-  const corBarra3 = "#232323";
-  const corBarra4 = "#232323";
-  const corBarra5 = "#232323";
-  const corBarra6 = "#232323";
-  const corTexto = "#e2e2e2";
-
   return (
-    <MainStyled>
-      <section className="quemsou">
-        <div className="divquemsou">
-          <div className="quemsouperg">Quem sou?</div>
-          <div className="quemsoutexto">
-            <p>
-              Sou natural do interior do Rio de Janeiro, da cidade de Resende.
-              Cresci em um ambiente tranquilo, repleto de curiosidade e
-              criatividade. Aos seis anos, mudei-me para a capital, onde comecei
-              a ter contato com novas oportunidades e tecnologias que, até
-              então, pareciam distantes. Aos dez anos, tive meu primeiro
-              encontro com um computador e foi literalmente amor à primeira
-              vista. Lembro-me do fascínio ao descobrir que aquela máquina era
-              capaz de transformar ideias em realidade. Desde então, já se
-              passaram mais de trinta e cinco anos de aprendizado contínuo,
-              experimentação e uma paixão que só se intensificou com o tempo.
-            </p>
-            <br />
-            <p>
-              Durante muitos anos, dediquei-me profissionalmente ao design
-              gráfico, onde aprimorei meu olhar para detalhes, estética e
-              usabilidade. Essa experiência me ensinou a importância da harmonia
-              entre forma e função, e me deu uma base sólida para compreender o
-              valor da experiência do usuário. No entanto, minha curiosidade
-              natural e desejo de construir soluções mais complexas e
-              inteligentes me levaram a seguir um novo caminho: a Engenharia de
-              Software.
-            </p>
-            <br />
-            <p>
-              Atualmente, estou cursando Engenharia de Software e direcionando
-              todos os meus esforços para o desenvolvimento de sistemas e
-              aplicações modernas. Busco constantemente aprimorar meus
-              conhecimentos em programação, arquitetura de software e boas
-              práticas de desenvolvimento, sempre com foco em criar soluções
-              eficientes, seguras e visualmente atraentes. Acredito que a
-              combinação entre criatividade e lógica é o que diferencia um bom
-              desenvolvedor — e é exatamente essa fusão que me motiva todos os
-              dias.
-            </p>
-            <br />
-            <p>
-              Meu objetivo é consolidar minha carreira como Engenheiro de
-              Software, aplicando toda a experiência adquirida ao longo dos anos
-              para impactar positivamente empresas, instituições e comunidades
-              por meio da tecnologia. Tenho como propósito contribuir para um
-              mundo mais conectado, acessível e inovador, utilizando o poder do
-              software para transformar ideias em realidades concretas e gerar
-              valor para as pessoas.
-            </p>
-          </div>
+    <MainContainer>
+      <AboutSection>
+        <SectionTitle>Quem sou?</SectionTitle>
+        <div className="bio">
+          <p>
+            Com mais de 35 anos de contato com a tecnologia e uma base sólida em Design Gráfico, 
+            estou em transição para a <strong>Engenharia de Software</strong>. Minha trajetória é 
+            marcada pela fusão entre a estética visual e a lógica de sistemas.
+          </p>
+          <p>
+            Atualmente, curso Engenharia de Software na Estácio, focando no desenvolvimento de 
+            soluções modernas com tecnologias como React, JavaScript e Node.js. Meu objetivo é 
+            construir software que não apenas funcione perfeitamente, mas que proporcione 
+            experiências excepcionais aos usuários.
+          </p>
         </div>
-      </section>
-      <section className="cards">
-        <div className="divcards">
-          <div className="card1">
-            <h1 className="cardsect1">Design Sênior</h1>
-            <div className="cardsect2">2008 - 2023</div>
-            <div className="cardsect3">
-              Possuo ampla experiência em diversas áreas do design gráfico,
-              atuando consistentemente com trabalhos freelancers. Minhas
-              atividades abrangem a criação de logotipos, edição de vídeos,
-              desenhos e maquetes em três dimensões e o desenvolvimento de uma
-              vasta gama de materiais físicos, como adesivos de parede, banners,
-              panfletos, cartões de visita, jornais, revistas, artes para
-              camisas, uniformes de times e conteúdos gráficos para sites e
-              redes sociais, entre outros projetos de comunicação visual.
-            </div>
-          </div>
+      </AboutSection>
 
-          <div className="card1">
-            <h1 className="cardsect1">Design Frelance</h1>
-            <div className="cardsect2">2011 - 2021</div>
-            <div className="cardsect3">
-              Durante esse período, fiquei encarregado de toda a mídia, seja
-              digital ou impressa, de uma instituição de médio porte. Minhas
-              responsabilidades incluíam a criação e gestão de conteúdos
-              visuais, com o objetivo principal de atrair e engajar novos
-              usuários. Atuei na organização visual completa da instituição e
-              supervisionei o desenvolvimento de campanhas de comunicação. Essa
-              experiência consolidou minhas habilidades em direção de arte e
-              estratégia de conteúdo para resultados específicos.
-            </div>
-          </div>
+      <SectionTitle>Trajetória Profissional</SectionTitle>
+      <GridCards>
+        <ExperienceCard>
+          <h3>Design Sênior</h3>
+          <span className="date">2008 - 2023</span>
+          <p>Especialista em comunicação visual, branding e interfaces. Liderança em projetos complexos de design para mídias físicas e digitais.</p>
+        </ExperienceCard>
 
-          <div className="card1">
-            <h1 className="cardsect1">Serviços de Dev</h1>
-            <div className="cardsect2">2022 - Atual</div>
-            <div className="cardsect3">
-              Como um profissional multifacetado, em 2021 passei a me dedicar
-              intensamente aos estudos de programação e, em 2023, comecei a
-              cursar Engenharia de Software. Nesse intervalo, realizei alguns
-              trabalhos freelancers de manutenção de sites para pequenas
-              empresas. No mesmo período comecei a ministrar aulas de
-              informática e design gráfico, onde utilizava os conhecimentos
-              adquiridos em programação, para criar jogos educativos que
-              auxiliavam cognitivamente os meus alunos.
-            </div>
-          </div>
+        <ExperienceCard>
+          <h3>Design Freelance</h3>
+          <span className="date">2011 - 2021</span>
+          <p>Gestão completa de identidade visual e campanhas de engajamento para instituições de médio porte, focando em usabilidade e conversão.</p>
+        </ExperienceCard>
+
+        <ExperienceCard>
+          <h3>Software Developer (Freelance)</h3>
+          <span className="date">2022 - ATUAL</span>
+          <p>Desenvolvimento de aplicações web, manutenção de sistemas e integração de jogos educativos como ferramenta cognitiva.</p>
+        </ExperienceCard>
+      </GridCards>
+
+      <SkillsLayout>
+        <div className="technical-skills">
+          <SectionTitle>Habilidades Técnicas</SectionTitle>
+          <BarraStatus label="React / React Native" level={85} />
+          <BarraStatus label="JavaScript (ES6+)" level={80} />
+          <BarraStatus label="HTML5 / CSS3" level={90} />
+          <BarraStatus label="Node.js" level={35} />
+          <BarraStatus label="TypeScript" level={30} />
+          <BarraStatus label="Engenharia de Software" level={65} />
+          <BarraStatus label="Design Gráfico (Adobe Suite)" level={85} />
         </div>
-      </section>
-      <div className="divprincipal">
-        <div className="divprincipalint">
-          <div className="divhabilidades">
-            <h1 className="h1">Habilidades</h1>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"Inglês (Leitura)"}
-                corTexto={corTexto}
-                corBarra={corBarra6}
-                tamBarra={60}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"Liderança"}
-                corTexto={corTexto}
-                corBarra={corBarra5}
-                tamBarra={90}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"Resolução de Problemas"}
-                corTexto={corTexto}
-                corBarra={corBarra5}
-                tamBarra={100}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"Trabalho em Equipe"}
-                corTexto={corTexto}
-                corBarra={corBarra5}
-                tamBarra={100}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"Eng. de Soft. (Cursando)"}
-                corTexto={corTexto}
-                corBarra={corBarra1}
-                tamBarra={5}
-                baseCalc={8}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"JavaScript"}
-                corTexto={corTexto}
-                corBarra={corBarra1}
-                tamBarra={80}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"TypeScript"}
-                corTexto={corTexto}
-                corBarra={corBarra1}
-                tamBarra={30}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"NodeJS"}
-                corTexto={corTexto}
-                corBarra={corBarra1}
-                tamBarra={35}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"C"}
-                corTexto={corTexto}
-                corBarra={corBarra1}
-                tamBarra={30}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"Java (Cursando)"}
-                corTexto={corTexto}
-                corBarra={corBarra1}
-                tamBarra={30}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"Python"}
-                corTexto={corTexto}
-                corBarra={corBarra1}
-                tamBarra={30}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"React"}
-                corTexto={corTexto}
-                corBarra={corBarra1}
-                tamBarra={85}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"React Native"}
-                corTexto={corTexto}
-                corBarra={corBarra1}
-                tamBarra={70}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"HTML"}
-                corTexto={corTexto}
-                corBarra={corBarra1}
-                tamBarra={90}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"CSS"}
-                corTexto={corTexto}
-                corBarra={corBarra1}
-                tamBarra={80}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"Montagem e Manut. Computadores"}
-                corTexto={corTexto}
-                corBarra={corBarra3}
-                tamBarra={90}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"Fotografia"}
-                corTexto={corTexto}
-                corBarra={corBarra3}
-                tamBarra={80}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"Design Gráfico"}
-                corTexto={corTexto}
-                corBarra={corBarra2}
-                tamBarra={85}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"Pacote Adobe"}
-                corTexto={corTexto}
-                corBarra={corBarra2}
-                tamBarra={65}
-                baseCalc={100}
-              />
-            </div>
-            <div className="divstatus">
-              <BarraStatus
-                tamTexto={15}
-                tamQuadro={100}
-                largQuadro={10}
-                corBack={corBackGeral}
-                texto={"Pacote Office"}
-                corTexto={corTexto}
-                corBarra={corBarra4}
-                tamBarra={80}
-                baseCalc={100}
-              />
-            </div>
-          </div>
-          <div className="divaside">
-            <h1 className="h1">Trabalho Voluntário</h1>
 
-            <p>
-              <strong>Pingo: Meu Primeiro Resgate (2007-2021)</strong>
-              <br />O meu maior trabalho voluntário reside na dedicação
-              incondicional aos animais. Essa paixão me levou a resgatar o
-              Pingo, um amigo peludo que encontrei nas ruas e adotei, cuidando
-              dele com amor e responsabilidade durante catorze anos, até o seu
-              falecimento. Na verdade, essa foi uma relação de suporte mútuo:
-              ele cuidou de mim tanto quanto eu dele. O Pingo foi a âncora que
-              me ajudou a superar diversas barreiras emocionais e desafios
-              pessoais, pois a alegria e o carinho incondicional dele eram a
-              certeza que eu tinha ao chegar em casa. Ele foi um companheiro
-              leal que guardarei para sempre em meu coração.
-            </p>
-            <p>
-              <strong>CAARP - Consultoria Voluntária e Apoio (15 anos)</strong>
-              <br />
-              Atuei por aproximadamente quinze anos como colaborador ativo do
-              CAARP - Centro de Apoio aos Animais de Rua e Particulares /
-              Protetora Tânia. Minha contribuição abrangeu diversas frentes,
-              incluindo o suporte financeiro contínuo e o voluntariado
-              presencial em eventos e cuidados com os animais. Mais
-              crucialmente, atuei como Consultor de Programação Visual e Design,
-              desenvolvendo materiais gráficos essenciais para campanhas de
-              arrecadação de fundos e para a organização visual da ONG,
-              auxiliando na divulgação e na captação de recursos para o
-              tratamento e abrigo dos animais resgatados.
-            </p>
-            <p>
-              <strong>
-                Madruga: Resgate e Acompanhamento a Distância (2020 - Atual)
-              </strong>
-              <br />
-              Em 2020, durante um projeto no Espírito Santo, realizei o resgate
-              do Madruga, que havia sido atropelado e sofrido uma contusão
-              grave. Utilizando a força das redes sociais e a colaboração da
-              comunidade local, consegui o auxílio necessário para custear os
-              tratamentos iniciais e tirá-lo da situação de risco. Desde então,
-              ele está em um hotelzinho para pets, onde recebe todo o conforto e
-              acompanhamento veterinário necessários. Mensalmente, sou o
-              principal responsável pelos custos integrais da ração e auxilio na
-              organização das doações para a manutenção do hotel. Minha meta é
-              trazê-lo para viver comigo assim que for possível, garantindo que
-              ele tenha um lar permanente e amoroso como o Pingo teve.
-            </p>
-          </div>
+        <div className="volunteer-info">
+          <SectionTitle>Impacto Social</SectionTitle>
+          <p>Como engenheiro, acredito que a tecnologia deve servir ao bem comum.</p>
+          
+          <h4>Apoio à Causa Animal (CAARP)</h4>
+          <p>Consultoria voluntária em design e arrecadação de recursos durante 15 anos.</p>
+          
+          <h4>Resgate Animal Incondicional</h4>
+          <p>Dedicação ao resgate e suporte de animais em situação de risco (Pingo e Madruga).</p>
         </div>
-      </div>
-    </MainStyled>
+      </SkillsLayout>
+    </MainContainer>
   );
 }
