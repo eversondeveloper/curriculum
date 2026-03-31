@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ImageAutor from "../../public/autor.png";
+import ImageAutor from "../../public/autor1.png";
 import IconBtn from "./IconsBtn";
 import { HeaderContainer, TopBar, HeroContent } from "./HeaderStyled";
 
