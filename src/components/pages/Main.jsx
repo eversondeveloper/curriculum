@@ -1,6 +1,6 @@
 import BarraStatus from "../BarraStatus";
-import { 
-  MainContainer, SectionTitle, AboutSection, 
+import {
+  MainContainer, SectionTitle, AboutSection,
   GridCards, ExperienceCard, SkillsLayout,
   ProjectsGrid, ProjectCard // Importando os novos estilos
 } from "./MainStyled";
@@ -17,14 +17,14 @@ export default function Main() {
         <SectionTitle>Quem sou?</SectionTitle>
         <div className="bio">
           <p>
-            Com mais de 35 anos de contato com a tecnologia e uma base sólida em Design Gráfico, 
-            estou em transição para a <strong>Engenharia de Software</strong>. Minha trajetória é 
+            Com mais de 35 anos de contato com a tecnologia e uma base sólida em Design Gráfico,
+            estou em transição para a <strong>Engenharia de Software</strong>. Minha trajetória é
             marcada pela fusão entre a estética visual e a lógica de sistemas.
           </p>
           <p>
-            Atualmente, curso Engenharia de Software na Estácio, focando no desenvolvimento de 
-            soluções modernas com tecnologias como React, JavaScript e Node.js. Meu objetivo é 
-            construir software que não apenas funcione perfeitamente, mas que proporcione 
+            Atualmente, curso Engenharia de Software na Estácio, focando no desenvolvimento de
+            soluções modernas com tecnologias como React, JavaScript e Node.js. Meu objetivo é
+            construir software que não apenas funcione perfeitamente, mas que proporcione
             experiências excepcionais aos usuários.
           </p>
         </div>
@@ -36,19 +36,18 @@ export default function Main() {
         <ProjectCard>
           <div className="project-image">
             <img src={ImgEversCash} alt="EversCash PDV" />
-            <span>Espaço para Imagem EversCash</span>
           </div>
           <div className="project-info">
             <h3>EversCash</h3>
             <p>
-              Sistema de Ponto de Venda (PDV) de alto desempenho projetado para otimizar 
-              a gestão comercial e o fluxo de caixa. Projeto foco no evento Startup Experience 2026.
+              Sistema de Ponto de Venda (PDV) de alto desempenho projetado para otimizar a gestão comercial e o fluxo de caixa. Projeto foco no evento Startup Experience 2026.
             </p>
             <div className="tech-tags">
               <span>React</span>
               <span>Node.js</span>
               <span>SQL</span>
               <span>Gestão de Negócios</span>
+              <span>Análise de Dados</span>
             </div>
           </div>
         </ProjectCard>
@@ -62,9 +61,8 @@ export default function Main() {
           <div className="project-info">
             <h3>SEV - Sistema de Votação Eletrônica</h3>
             <p>
-              Simulador eleitoral interativo para educação cívica de jovens. 
-              Possui módulos de cadastro de eleitores, validação de CPF em tempo real e 
-              apuração automatizada.
+              Simulador eleitoral interativo para educação cívica de jovens.
+              Possui módulos de cadastro de eleitores, validação de CPF em tempo real e apuração automatizada.
             </p>
             <div className="tech-tags">
               <span>React</span>
@@ -79,13 +77,11 @@ export default function Main() {
         <ProjectCard>
           <div className="project-image">
             <img src={ImgClickPow} alt="Jogo ClickPow!" />
-            <span>Espaço para Imagem ClickPow!</span>
           </div>
           <div className="project-info">
             <h3>ClickPow!</h3>
             <p>
-              Jogo educacional gamificado para reabilitação do clique duplo no mouse. 
-              Utilizado como ferramenta pedagógica para mais de 200 alunos de informática básica.
+              Jogo educacional gamificado para reabilitação do clique duplo no mouse. Utilizado como ferramenta pedagógica para mais de 200 alunos de informática básica.
             </p>
             <div className="tech-tags">
               <span>JavaScript</span>
